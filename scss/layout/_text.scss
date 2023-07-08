@@ -341,125 +341,20 @@
         font-style: normal;
     }
 
-    &.-REQUEST{
-        background: white;
-        a{
-            span{
-                position: relative;
-                display: block;
-                &::after{
-                    content: "REQUEST";
-                    font-size: 11px;
-                    position: absolute;
-                    top: 70%;
-                    left: 50%;
-                    transform: translate(-50%,-50%);
-                    @include mq(tb){
-                        font-size: .65vw;
-                    }
-                }
-            }
-        }
 
+    &.-active{
+        display: inline-block;
+        font-weight: bold;
+        border-bottom: 1px solid $site-color01;
+
+        filter: drop-shadow(1px 1px 2px $site-color01);
+        transform: scale(1.1);
+        transition: all 0.5s;
     }
-    &.-RESERVE{
-        background: $site-color01;
-        span{
-            position: relative;
-            display: block;
-            &::after{
-                content: "RESERVE";
-                font-size: 11px;
-                position: absolute;
-                top: 70%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                @include mq(tb){
-                    font-size: .65vw;
-                }
-            }
-        }
-    }
-    &.-TOP{
-        position: relative;
-        &::after{
-            content: "TOP";
-            font-size: .6vw;
-            font-weight: bold;
-            position: absolute;
-            top:20%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-        }
-    }
-    &.-CONCEPT{
-        position: relative;
-        &::after{
-            content: "CONCEPT";
-            font-size: .6vw;
-            font-weight: bold;
-            position: absolute;
-            top:20%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-        }
-    }
-    &.-BUILT{
-        position: relative;
-        &::after{
-            content: "BUILT HOUSE";
-            font-size: .6vw;
-            font-weight: bold;
-            position: absolute;
-            top:20%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-        }
-    }
-    &.-SETSUBI{
-        position: relative;
-        &::after{
-            content: "EQUIPMENT";
-            font-size: .6vw;
-            font-weight: bold;
-            position: absolute;
-            top:20%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-        }
-    }
-    &.-LOCATION{
-        position: relative;
-        &::after{
-            content: "LOCATION";
-            font-size: .6vw;
-            font-weight: bold;
-            position: absolute;
-            top:20%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-        }
-    }
-    &.-JYUKYO{
-        position: relative;
-        &::after{
-            content: "JYUKYO QUALITY";
-            font-size: .5vw;
-            font-weight: bold;
-            position: absolute;
-            top:20%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            @include mq(tb){
-                font-size: .3vw;
-                line-height: 1.2;
-            }
-            @include mq(pc){
-                font-size: .5vw;
-                line-height: 1.7;
-            }
-        }
-    }
+
+
+
+
 
     // 色
     &.-white{
@@ -497,118 +392,6 @@
         color: $site-color01;
         a{
             color: $site-color01;
-        }
-    }
-    .w-auto{
-        display: inline-block;
-        width: auto;
-        // ※
-        &.-komezirushi{
-            position: relative;
-            &::after{
-                content: "※リビングタウンとは4要素「暮らす・働く・学ぶ・遊ぶ」が揃う街";
-                position: absolute;
-                bottom: -60%;
-                left: 0%;
-
-                font-size: 11px;
-                @include mq(tb){
-                    bottom: -40%;
-                    font-size: 1vw;
-                }
-            }
-        }
-    }
-
-    // 西武池袋線
-    &.ikebukuro-sen{
-        position: relative;
-        @include mq(tb){
-            display: inline-block !important;
-        }
-        &::after{
-            content: "西武池袋線";
-            position: absolute;
-            top: -50%;
-            left: 9%;
-
-            font-size: 1vw;
-            @include mq(tb){
-                top: -28%;
-                left: 4%;
-                font-size: 1vw;
-            }
-            @include mq(pc){
-                top: -33%;
-                left: 4%;
-                font-size: 16px;
-
-            }
-        }
-    }
-    // 西武池袋線・新宿線
-    &.ikebukuro-shinzyuku-sen{
-        display: inline-block !important;
-        position: relative;
-        &::after{
-            content: "西武池袋･新宿線";
-            position: absolute;
-            top: -50%;
-            left: -6%;
-            width: 110%;
-            font-size: 11px;
-            width: 120%;
-            @include mq(sp){
-                transform: scale(.7);
-            }
-            @include mq(tb){
-                top: -30%;
-                left: -8%;
-                width: 110%;
-                font-size: 1vw;
-            }
-            @include mq(pc){
-                top: -33%;
-                left: 0%;
-                font-size: 16px;
-            }
-        }
-    }
-    // ドット
-    &.dots{
-        position: relative;
-        &::after{
-            content: "・・・・";
-            position: absolute;
-            top: -85%;
-            left: 17.6%;
-            font-size: 7.7vw;
-            @include mq(tb){
-                top: -54%;
-                left: 18%;
-                font-size: 3.25vw;
-            }
-            @include mq(pc){
-                font-size: 2.75vw;
-            }
-        }
-    }
-    // アイコン
-    &.iconTitle{
-        position: relative;
-        padding-left: 2.5vw;
-        .icon{
-            position: absolute;
-            top: 50%;
-            left: -3.5%;
-            transform: translateY(-50%);
-            width: 5vw;
-            height: 5vw;
-            @include mq(tb){
-                left: 0;
-                width: 1.8vw;
-                height: 1.8vw;
-            }
         }
     }
 }

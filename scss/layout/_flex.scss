@@ -283,6 +283,35 @@
 		}
 
 
+		// オリジナル
+		&.-header-bar{
+			display: flex;
+			flex-wrap: nowrap;
+			align-items: center;
+			justify-content: space-between;
+			// padding: 1vh 2.5vw 0;
+			@include mq(tb){
+				// flex-wrap: nowrap;
+				// padding: 1.5vh 0 0;
+			}
+			.flexItem{
+				&.-logoArea{
+					@include mq(sp){
+						width: 60%;
+					}
+					@include mq(tb){
+						width: calc(25%);
+					}
+					@include mq(tb-pc1400){
+						width: calc(15%);
+					}
+				}
+			}
+		}
+
+
+
+
 
 
 		&.-columnBox{
