@@ -1,0 +1,24 @@
+
+#p-1goutou{
+    .l-contents{
+        &.-img-bg{
+            .l-contentsBox{
+                &.-p-contents{
+                    @include mq(sp){
+                        top: 1%;
+                    }
+                }
+                &.-p-contents_ttl{
+                    @include mq(sp){
+                        bottom: 7%;
+                    }
+                }
+                &.-p-contents_contact{
+                    @include mq(sp){
+                        bottom: 5%;
+                    }
+                }
+            }
+        }
+    }
+}

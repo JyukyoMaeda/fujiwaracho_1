@@ -1,0 +1,25 @@
+#p-3goutou{
+    .l-contents{
+        &.-img-bg{
+            .l-contentsBox{
+                &.-p-contents{
+                    @include mq(sp){
+                        top: 1%;
+                    }
+                }
+                &.-p-contents_ttl{
+                    bottom: 5%;
+                    @include mq(tb){
+                        bottom: 8.5%;
+                    }
+                }
+                &.-p-contents_contact{
+                    bottom: 3%;
+                    @include mq(tb){
+                        bottom: 4%;
+                    }
+                }
+            }
+        }
+    }
+}

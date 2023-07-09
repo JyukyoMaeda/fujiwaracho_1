@@ -89,6 +89,28 @@
 				}
 			}
 
+			&.-p-text{
+				top: .2%;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+			&.-p-contents{
+				top: 3%;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+			&.-p-contents_ttl{
+				bottom: 8%;
+				left: 50%;
+				transform: translateX(-50%);
+
+			}
+			&.-p-contents_contact{
+				bottom: 3%;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+
 			.l-contentsBox--wrapper{
 				width: 100%;
 				height: auto;
