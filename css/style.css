@@ -125,7 +125,7 @@ img {
 }
 
 .w1200 {
-  width: 95% !important;
+  width: 65% !important;
   max-width: 1200px;
   margin: auto;
 }
@@ -511,25 +511,58 @@ img {
     width: 30%;
   }
 }
-.l-contents.-img-bg .l-contentsBox.-right-topBtn {
-  top: 2.5%;
+.l-contents.-img-bg .l-contentsBox.-top-kukaku {
+  top: 4%;
   left: 50%;
   transform: translateX(-50%);
-  width: 100%;
 }
-.l-contents.-img-bg .l-contentsBox.-right-topBtn a {
-  display: block;
-  padding: 8% 23%;
+@media screen and (min-width: 767px) {
+  .l-contents.-img-bg .l-contentsBox.-top-kukaku {
+    top: 7.5%;
+  }
 }
-.l-contents.-img-bg .l-contentsBox.-right-btmBtn {
-  top: 52.5%;
+.l-contents.-img-bg .l-contentsBox.-top-built-ttl {
+  top: 2%;
   left: 50%;
   transform: translateX(-50%);
-  width: 100%;
 }
-.l-contents.-img-bg .l-contentsBox.-right-btmBtn a {
-  display: block;
-  padding: 8% 23%;
+@media screen and (min-width: 767px) {
+  .l-contents.-img-bg .l-contentsBox.-top-built-ttl {
+    top: 0;
+  }
+}
+.l-contents.-img-bg .l-contentsBox.-top-built-contents {
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media screen and (min-width: 767px) {
+  .l-contents.-img-bg .l-contentsBox.-top-built-contents {
+    top: 50%;
+  }
+}
+.l-contents.-img-bg .l-contentsBox.-top-boxBtn {
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20%;
+}
+@media screen and (min-width: 767px) {
+  .l-contents.-img-bg .l-contentsBox.-contact-ttl {
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.l-contents.-img-bg .l-contentsBox.-contact-btnArea {
+  top: 57%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media screen and (min-width: 767px) {
+  .l-contents.-img-bg .l-contentsBox.-contact-btnArea {
+    top: 50%;
+  }
 }
 .l-contents.-img-bg .l-contentsBox .l-contentsBox--wrapper {
   width: 100%;
@@ -905,6 +938,18 @@ img {
     justify-content: space-around;
   }
 }
+@media screen and (max-width: 768px) {
+  .l-flex--area .l-flex--contents.-columnBox03.-s_column03 .flexItem {
+    width: 33.3333%;
+    padding: 0 2%;
+  }
+  .l-flex--area .l-flex--contents.-columnBox03.-s_column03 .flexItem:nth-child(1), .l-flex--area .l-flex--contents.-columnBox03.-s_column03 .flexItem:nth-child(4) {
+    padding: 0 4% 0 0;
+  }
+  .l-flex--area .l-flex--contents.-columnBox03.-s_column03 .flexItem:nth-child(3), .l-flex--area .l-flex--contents.-columnBox03.-s_column03 .flexItem:nth-child(6) {
+    padding: 0 0 0 4%;
+  }
+}
 .l-flex--area .l-flex--contents.-columnBox03 .flexItem {
   width: 100%;
   padding: 0 3%;
@@ -919,6 +964,14 @@ img {
   }
   .l-flex--area .l-flex--contents.-columnBox03 .flexItem:nth-child(3), .l-flex--area .l-flex--contents.-columnBox03 .flexItem:nth-child(6) {
     padding: 0 0 0 4%;
+  }
+}
+.l-flex--area .l-flex--contents.-columnBox03.-nopd .flexItem {
+  padding-bottom: 5px;
+}
+@media screen and (min-width: 767px) {
+  .l-flex--area .l-flex--contents.-columnBox03.-nopd .flexItem {
+    padding: 0;
   }
 }
 .l-flex--area .l-flex--contents.-columnBox04 {
@@ -1409,7 +1462,7 @@ img {
 @media screen and (min-width: 767px) {
   .l-footer.-fuzimino .l-footer--title {
     width: 50%;
-    max-width: 480px;
+    max-width: 420px;
     margin-right: 25px !important;
   }
 }
@@ -1581,6 +1634,22 @@ img {
   .l-linkImg.-p03:hover {
     transform: scale(0.95);
     transition-duration: 0.2s;
+  }
+}
+@media screen and (min-width: 767px) {
+  .l-linkImg.-p04 .-cover:hover {
+    opacity: 0;
+    transition-duration: 0.2s;
+  }
+}
+.l-linkImg.-p04 .-cover {
+  opacity: 1;
+  transition-duration: 0.5s;
+  overflow: hidden;
+}
+@media screen and (min-width: 767px) {
+  .l-linkImg.-p04 .-cover {
+    transition: all 0.5s ease-in-out;
   }
 }
 .l-linkImg.-contact {
@@ -2283,6 +2352,27 @@ img {
 .l-contents.-youtubeArea .youtubeArea-wrapper iframe {
   width: 100%;
   height: 100%;
+}
+
+.l-contents.-img-bg .l-contentsBox.-right-topBtn {
+  top: 2.5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+.l-contents.-img-bg .l-contentsBox.-right-topBtn a {
+  display: block;
+  padding: 8% 23%;
+}
+.l-contents.-img-bg .l-contentsBox.-right-btmBtn {
+  top: 52.5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+.l-contents.-img-bg .l-contentsBox.-right-btmBtn a {
+  display: block;
+  padding: 8% 23%;
 }
 
 #sp-btm-contactArea {

@@ -375,6 +375,25 @@
 			@include mq(tb){
 				justify-content: space-around;
 			}
+			&.-s_column03{
+				.flexItem{
+					@include mq(sp){
+						width: 33.3333%;
+						padding: 0 2%;
+						&:nth-child(1),
+						&:nth-child(4)
+						{
+							padding: 0 4% 0 0;
+						}
+						&:nth-child(3),
+						&:nth-child(6)
+						{
+							padding: 0 0 0 4%;
+						}
+					}
+				}
+			}
+
 			.flexItem{
 				width: 100%;
 				padding: 0 3%;
@@ -390,6 +409,14 @@
 					&:nth-child(6)
 					{
 						padding: 0 0 0 4%;
+					}
+				}
+			}
+			&.-nopd{
+				.flexItem{
+					padding-bottom: 5px;
+					@include mq(tb){
+						padding: 0;
 					}
 				}
 			}

@@ -41,28 +41,54 @@
 				a{
 				}
 			}
-			//サイト右側中段に表示 （PCのみ）
-			&.-right-topBtn{
-				top: 2.5%;
+			&.-top-kukaku{
+				top: 4%;
 				left: 50%;
 				transform: translateX(-50%);
-				width: 100%;
-				a{
-					display: block;
-					padding: 8% 23%;
+				@include mq(tb){
+					top: 7.5%;
 				}
 			}
-			// サイト下部に表示（SPのみ）
-			&.-right-btmBtn{
-				top: 52.5%;
+			&.-top-built-ttl{
+				top: 2%;
 				left: 50%;
 				transform: translateX(-50%);
-				width: 100%;
-				a{
-					display: block;
-					padding: 8% 23%;
+				@include mq(tb){
+					top: 0;
+					// width: 60%;
+					// max-width: 1000px;
 				}
 			}
+			&.-top-built-contents{
+				top: 25%;
+				left: 50%;
+				transform: translateX(-50%);
+				@include mq(tb){
+					top: 50%;
+				}
+			}
+			&.-top-boxBtn{
+				top: 80%;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 20%;
+			}
+			&.-contact-ttl{
+				@include mq(tb){
+					top: 10%;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
+			&.-contact-btnArea{
+				top: 57%;
+				left: 50%;
+				transform: translateX(-50%);
+				@include mq(tb){
+					top: 50%;
+				}
+			}
+
 			.l-contentsBox--wrapper{
 				width: 100%;
 				height: auto;
