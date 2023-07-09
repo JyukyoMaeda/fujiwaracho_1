@@ -4737,7 +4737,7 @@ header {
 }
 @media screen and (min-width: 767px) {
   #p-4goutou .l-contents.-img-bg .l-contentsBox.-p-contents_ttl {
-    bottom: 10.5%;
+    bottom: 7.5%;
   }
 }
 #p-4goutou .l-contents.-img-bg .l-contentsBox.-p-contents_contact {
@@ -4745,7 +4745,7 @@ header {
 }
 @media screen and (min-width: 767px) {
   #p-4goutou .l-contents.-img-bg .l-contentsBox.-p-contents_contact {
-    bottom: 6%;
+    bottom: 4%;
   }
 }
 
