@@ -2403,6 +2403,13 @@ img {
   transform: scale(1.1);
   transition: all 0.5s;
 }
+.l-text.-active_s {
+  display: inline-block;
+  color: white !important;
+  font-weight: bold;
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
 .l-text.-white {
   color: white;
 }
