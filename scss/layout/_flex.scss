@@ -442,6 +442,14 @@
 					padding: 0 1%;
 				}
 			}
+			&.-nopd{
+				.flexItem{
+					padding-bottom: 5px;
+					@include mq(tb){
+						padding: 0;
+					}
+				}
+			}
 		}
 		&.-columnBox05{
 			display: flex;

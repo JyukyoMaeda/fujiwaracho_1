@@ -1,0 +1,32 @@
+#p-location{
+    .l-contents{
+        &.-img-bg{
+            .l-contentsBox{
+                &.-p-contents{
+                    @include mq(sp){
+                        top: 1%;
+                    }
+                }
+                &.-p-contents_ttl{
+                    bottom: 1%;
+                    @include mq(tb){
+                        bottom: 3.5%;
+                    }
+                }
+                &.-p-contents_contact{
+                    bottom: .5%;
+                    @include mq(tb){
+                        bottom: 1%;
+                    }
+                }
+
+                &.-location-tab_content{
+                    top: 60%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+
+}
