@@ -67,7 +67,14 @@ img{
 	vertical-align: bottom;
 }
 
-
+.w1280{
+	width: 65% !important;
+	max-width: 1280px;
+	margin: auto;
+	&.-s100{
+		width: 100% !important;
+	}
+}
 
 .w1200{
 	width: 65% !important;
