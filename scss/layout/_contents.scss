@@ -110,6 +110,39 @@
 				left: 50%;
 				transform: translateX(-50%);
 			}
+			&.-p-naikanArea_ttl{
+				top: 84%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 100%;
+				@include mq(tb){
+					top: 77%;
+					
+				}
+				@include mq(tb-pc1400){
+					top: 75%;
+				}
+				@include mq(tb-pc1500){
+					top: 76%;
+				}
+			}
+			&.-p-naikanArea{
+				&.-p04{
+					top: 89%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 100%;
+					@include mq(tb){
+						top: 83%;
+					}
+					@include mq(tb-pc1400){
+						top: 81%;
+					}
+					@include mq(tb-pc1500){
+						top: 82%;
+					}
+				}
+			}
 
 			.l-contentsBox--wrapper{
 				width: 100%;
